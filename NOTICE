@@ -1,0 +1,80 @@
+Evangeline — Legal Counsel Agent
+Copyright 2026 The Funkatorium (Falco Schafer & Rook Schafer)
+
+Licensed under the Apache License, Version 2.0.
+
+------------------------------------------------------------------------
+
+DISCLAIMER — NOT LEGAL ADVICE
+
+Evangeline is an AI-powered legal research and analysis tool. She is not
+a licensed attorney, law firm, or substitute for professional legal counsel.
+
+Her output — including contract reviews, jurisdiction research, compliance
+mappings, risk assessments, and framework recommendations — is provided
+for informational and educational purposes only. It does not constitute
+legal advice, tax advice, or professional counsel of any kind.
+
+This tool does not provide Rechtsdienstleistungen (legal services) within
+the meaning of the Rechtsdienstleistungsgesetz (RDG). Output is general
+legal research and educational information, not individualized legal
+counsel for specific cases (keine Rechtsberatung im Einzelfall). Users in
+Germany are advised that only licensed attorneys (Rechtsanwalte) or persons
+authorized under the RDG may provide binding legal advice.
+
+YOU MUST NOT rely on Evangeline's output as the sole basis for legal,
+financial, or business decisions. All contracts, agreements, and legal
+documents produced with Evangeline's assistance should be independently
+reviewed by a licensed attorney in the applicable jurisdiction(s) before
+execution.
+
+Evangeline's analysis is based on legal information available as of her
+training data cutoff and may not reflect subsequent changes to statutes,
+regulations, treaties, case law, or regulatory guidance.
+
+The Funkatorium, its founders, contributors, and affiliates accept no
+liability, to the maximum extent permitted by applicable law, for:
+
+  - Decisions made based on Evangeline's analysis or recommendations
+  - Errors, omissions, or inaccuracies in generated output
+  - Losses, damages, or disputes arising from reliance on the tool
+  - Outdated legal information (statutes, treaties, and regulations
+    change; Evangeline's training data has a knowledge cutoff)
+  - Jurisdiction-specific outcomes that differ from general analysis
+
+Nothing in this disclaimer excludes or limits liability for damages caused
+by intentional misconduct (Vorsatz) or where exclusion is prohibited by
+mandatory law.
+
+This tool is provided "AS IS" without warranties of any kind, express or
+implied, including but not limited to warranties of merchantability,
+fitness for a particular purpose, or non-infringement. Without limiting
+the foregoing, no warranty is made that the output is accurate, complete,
+current, or suitable for use in legal proceedings, regulatory compliance,
+contract execution, or any decision with legal consequences. See the
+Apache License, Version 2.0 for full warranty and liability terms.
+
+If any provision of this disclaimer is held invalid or unenforceable under
+applicable law, the remaining provisions shall continue in full force and
+effect.
+
+If you need legal advice, hire a lawyer.
+
+------------------------------------------------------------------------
+
+CHARACTER INTELLECTUAL PROPERTY
+
+The character "Evangeline" — including her identity, personality, voice,
+backstory, visual depictions, and all associated lore — is a literary
+character and proprietary intellectual property of The Funkatorium,
+protected under German copyright law (Urheberrechtsgesetz, UrhG) and
+applicable international copyright treaties including the Berne
+Convention. This character IP is NOT covered by the Apache 2.0 license.
+
+You may use Evangeline as shipped. You may not create derivative
+characters based on her identity, personality, or lore.
+
+The technical capabilities (legal checklists, jurisdiction mappings,
+contract lifecycle frameworks, memory format, reference intelligence)
+ARE covered by the Apache 2.0 license and may be freely used, modified,
+and redistributed.
