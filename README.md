@@ -3,20 +3,21 @@
 </p>
 
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Montserrat&weight=500&size=22&pause=1200&color=D4AF37&center=true&vCenter=true&width=900&lines=Read+the+clause.+Then+read+what+it's+hiding.;88+learnings+from+production+legal+reviews.+Four+jurisdictions.;Diagnosis+only.+Because+the+agent+that+finds+the+gap+shouldn't+draft+the+fix." alt="Evangeline tagline" />
+  <img src="https://readme-typing-svg.demolab.com?font=Montserrat&weight=500&size=22&pause=1200&color=D4AF37&center=true&vCenter=true&width=900&lines=Read+the+clause.+Then+read+what+it's+hiding.;96+learnings+from+production+legal+reviews.+Five+jurisdictions.;Diagnosis+only.+Because+the+agent+that+finds+the+gap+shouldn't+draft+the+fix." alt="Evangeline tagline" />
 </p>
 
 <p align="center">
   <a href="https://opensource.org/licenses/Apache-2.0"><img src="https://img.shields.io/badge/License-Apache%202.0-D4AF37?style=flat" alt="License: Apache 2.0" /></a>
   <img src="https://img.shields.io/badge/Claude-Opus-000000?style=flat&logo=anthropic&logoColor=white" alt="Claude Opus" />
   <img src="https://img.shields.io/badge/Framework-Claude%20Code-000000?style=flat&logo=anthropic&logoColor=white" alt="Claude Code" />
-  <img src="https://img.shields.io/badge/Learnings-88-brightgreen?style=flat" alt="88 Learnings" />
+  <img src="https://img.shields.io/badge/Learnings-96-brightgreen?style=flat" alt="96 Learnings" />
 </p>
 
 <p align="center">
   <img src="https://img.shields.io/badge/Germany-BGB%20%2F%20HGB-blue?style=flat" alt="Germany: BGB / HGB" />
   <img src="https://img.shields.io/badge/United%20States-UCC%20%2F%20FCPA-red?style=flat" alt="US: UCC / FCPA" />
   <img src="https://img.shields.io/badge/Nigeria-CAMA%202020-green?style=flat" alt="Nigeria: CAMA 2020" />
+  <img src="https://img.shields.io/badge/United%20Kingdom-CDPA%20%2F%20Bribery%20Act-purple?style=flat" alt="UK: CDPA / Bribery Act" />
   <img src="https://img.shields.io/badge/Uganda-Companies%20Act%202012-orange?style=flat" alt="Uganda: Companies Act 2012" />
 </p>
 
@@ -24,9 +25,11 @@
 
 The gap between what a contract says and what it means is where people get hurt.
 
-Evangeline is a legal counsel agent for [Claude Code](https://docs.anthropic.com/en/docs/claude-code) that reads contracts across four jurisdictions, maps structural gaps against a 9-section completeness checklist, and tells you exactly what is missing, what is dangerous, and what specific clause language will fix it -- then hands the framework to your drafter (human or agent) while she watches what comes back. The analysis and the drafting stay in separate hands.
+Evangeline is a legal counsel agent for [Claude Code](https://docs.anthropic.com/en/docs/claude-code) that reads contracts across five jurisdictions, maps structural gaps against a 9-section completeness checklist, and tells you exactly what is missing, what is dangerous, and what specific clause language will fix it -- then hands the framework to your drafter (human or agent) while she watches what comes back. The analysis and the drafting stay in separate hands.
 
-Every review she runs makes the next one sharper. Evangeline carries 99 accumulated learnings from production legal reviews -- treaty statuses verified, jurisdiction-specific gotchas documented, clause patterns tested through real-world contract review across civil-law and common-law jurisdictions. She remembers what she found.
+Beyond contracts, Evangeline defends consumers who can't afford lawyers -- challenging unlawful bank terminations, Inkasso demands, and creditor overreach with the same statutory precision she brings to partnership agreements. She navigates open source licensing, copyright law across five legal traditions, film law from FFA funding to chain of title, and the evolving landscape of AI-generated content IP.
+
+Every review she runs makes the next one sharper. Evangeline carries 96 accumulated learnings from production legal reviews -- treaty statuses verified, jurisdiction-specific gotchas documented, clause patterns tested in real partnership agreements, and consumer protection victories won across Germany, the United States, the United Kingdom, Nigeria, and Uganda. She has reviewed contracts that crossed those borders. She has drafted dispute letters that made banks backpedal. She remembers what she found.
 
 <p align="center">
   <img src="./assets/spec-sheet.gif" alt="Evangeline -- Capability Spec Sheet" width="600" />
@@ -44,7 +47,7 @@ The name is from Longfellow's *Evangeline, A Tale of Acadie* (1847) -- a woman d
 
 Evangeline's lineage is Louisiana: the only place in the United States where Napoleonic civil law and English common law share one courthouse. French *Code Civil* reasoning and Anglo-American precedent law sit in the same courtroom. That is where she learned to navigate between legal traditions -- and it is why four jurisdictions feel like one.
 
-She moves between German civil law (BGB, the most refined civil code in Europe), American common law (state-by-state, case-by-case), and the British-inherited common law systems of Nigeria and Uganda, because she was born where these traditions already overlap.
+She moves between German civil law (BGB, the most refined civil code in Europe), American common law (state-by-state, case-by-case), post-Brexit United Kingdom law (where CDPA 1988 still has the world's only statutory provision for computer-generated works), and the British-inherited common law systems of Nigeria and Uganda, because she was born where these traditions already overlap.
 
 ---
 
@@ -52,7 +55,7 @@ She moves between German civil law (BGB, the most refined civil code in Europe),
 
 After every review, Evangeline emits a `MEMORY:` block with new learnings. A SubagentStop hook (`hooks/agent-memory-harvester.py`, installed alongside the agent) automatically harvests these blocks into `~/.claude/agents/memory/evangeline/_universal.md` -- the agent only thinks, the hook persists. The hook can also auto-commit and push the touched memory file to your own private `agent-memory` repo, so learnings survive across machines without manual babysitting. When connected to [MUSE Brain](https://github.com/funkatorium/muse-brain), those same learnings sync as brain observations that never decay. Each review sharpens the next: jurisdiction-specific patterns recognized instantly, treaty statuses tracked, clause patterns validated against real outcomes.
 
-Evangeline's 99 learnings cluster into specializations that no template library has:
+Evangeline's 96 learnings cluster into specializations that no template library has:
 
 #### International Tax & Treaty Intelligence (13 learnings)
 - Germany-Nigeria DTA does NOT EXIST -- confirmed via FIRS listing and cross-references
@@ -124,6 +127,18 @@ Evangeline's 99 learnings cluster into specializations that no template library 
 - Post-award contract management: 5 core functions where 70%+ of value is realized or lost
 - Contract closeout checklist: 9-step process including HGB section 257 retention requirements
 
+#### Consumer Protection & Debt Defense (4 learnings)
+- Section 498 BGB is zwingend (mandatory) for Teilzahlungsdarlehen termination: requires 2 consecutive missed payments + 5%/10% threshold + Abmahnung + 2-week Nachfrist. Banks cannot circumvent via AGB
+- BGH XI ZR 214/14: Sparkassen AGB termination clause (Nr. 26) fails section 307 BGB transparency test -- Sparkassen face higher termination bar than private banks due to public-law obligations
+- Schlichtungsstelle des DSGV: free for consumers, binding on Sparkassen up to 10k EUR -- best cost-free escalation before litigation
+- Real-world dispute pattern: debtor overpaid 197%, one 6-day delay, bank terminated citing AGB not Zahlungsverzug. Three-hammer defense: section 498 BGB (mandatory) + section 307 BGB (AGB-Kontrolle) + section 242 BGB (Treuwidrigkeit)
+
+#### Data Protection & Cross-Border Transfers (4 learnings)
+- Nigeria and Uganda have NO EU adequacy decisions -- SCCs mandatory for DE to NG and DE to UG transfers
+- EU-US Data Privacy Framework valid as of 2026, appeal pending (Case C-703/25 P). DPF certification OR SCCs as fallback
+- BGH VI ZR 396/24: Verantwortlicher must actively demand Loschbestatigung after AVV ends -- passive reliance on deletion promise insufficient
+- Brazil received EU adequacy decision Jan 2026; UK renewed Dec 2025
+
 ---
 
 ## Four Operating Modes
@@ -171,13 +186,16 @@ Each finding maps to the applicable legal basis -- a statute, a regulation, a tr
 
 ## Jurisdiction Intelligence
 
-Evangeline carries deep knowledge of four legal systems and the international frameworks that bridge them:
+Evangeline carries deep knowledge of five legal systems and the international frameworks that bridge them:
 
 **Germany (civil law -- BGB, HGB, StGB)**
 BGB contract law and liability. HGB commercial obligations. Section 288 BGB late payment interest. Section 126b BGB Textform. Salvatorische Klausel. Statusfeststellung for B2B classification. GDPR/DSGVO. Entity types from Einzelunternehmen to AG.
 
 **United States (common law, federal + state)**
 UCC for goods. Common law contract formation and consideration. FCPA anti-corruption (applies to US persons worldwide). Export controls (EAR, ITAR). State law variation across Delaware, California, New York. FATCA, tax treaties, IP under Copyright Act and Lanham Act.
+
+**United Kingdom (common law, post-Brexit)**
+CDPA 1988 copyright framework (including section 9(3) computer-generated works). Bribery Act 2010 (broader than FCPA -- no facilitation payment exception). UK GDPR + Data Protection Act 2018. Film Tax Relief and BFI cultural test. Companies Act 2006. Consumer Rights Act 2015. Post-Brexit sanctions (SAMLA 2018). IR35 off-payroll rules. Germany-UK DTA: 0% withholding on royalties and interest.
 
 **Nigeria (common law, British-inherited + constitutional)**
 CAMA 2020 company formation. Copyright Act 2022 (AI content provisions). NDPA 2023 data protection. ICPC/EFCC anti-corruption. Foreign investment rules. No DTA with Germany.
@@ -208,6 +226,20 @@ Beyond clause-level review, Evangeline understands the full contract lifecycle:
 - **Entity Structuring Awareness** -- when Einzelunternehmen reaches GmbH conversion thresholds, foreign entity registration requirements, entity flexibility drafting
 - **Cross-Border Data Transfer Architecture** -- SCCs, adequacy decisions, consent mechanisms, lightweight vs full DPA selection
 - **Professional Vocabulary** -- speaks CLM fluently (BATNA, ZOPA, RAG, ACV, MNT, KPA, value erosion, obligation register, compliance drift, clause library, redline, turn frequency, cycle time)
+
+## Specialized Competencies
+
+**Consumer Protection & Debt Defense**
+Inkasso challenge frameworks (Forderungsnachweis, Verjährung, RVG fee caps). Section 498 BGB mandatory consumer loan protections. Section 307 BGB AGB-Inhaltskontrolle. Schlichtungsstellen (ombudsman) routing -- DSGV for Sparkassen, BdB for private banks. Schuldnerberatung referral criteria. Bürgergeld and Jobcenter interaction with debt obligations. Pfändungsfreigrenzen (section 850c ZPO). Cross-jurisdiction: UK Financial Ombudsman Service, US FDCPA, Nigeria Consumer Protection Council Act.
+
+**Open Source Licensing**
+Full license taxonomy (MIT, Apache 2.0, BSD, MPL, LGPL, GPL, AGPL, Creative Commons family). Compatibility matrix -- GPL is incompatible with Apache 2.0 one-way. Dual licensing strategy (AGPL + commercial). CLA vs DCO for contributor agreements. German Urheberrecht interaction: section 29 UrhG makes copyright inalienable, so "assignment" language in permissive licenses is interpreted as exclusive license, not transfer. NOTICE file obligations for Apache 2.0 derivatives.
+
+**Copyright & IP Law**
+German Urheberrecht (UrhG sections 2, 7, 13, 14, 29, 31 -- persönliche geistige Schöpfung, inalienable copyright, Nutzungsrechte, Zweckübertragungslehre). US Copyright Act (sections 101-107 -- work for hire, fair use, fixation). UK CDPA 1988 (section 9(3) computer-generated works -- the world's only statutory AI authorship provision). EU DSM Directive 2019/790 (Art. 3-4 TDM exceptions, Art. 15 press publishers' right, Art. 17 platform liability). AI-generated content IP status across all five jurisdictions -- practical guidance on protecting the human creative direction layer.
+
+**Film Law (Filmrecht)**
+German film rights (sections 88-94 UrhG -- Filmwerk, cessio legis, Leistungsschutzrechte, Vergütungsanspruch). FFA/FFG funding criteria, regional film funds (Medienboard Berlin-Brandenburg, BKM). UK BFI cultural test, Film Tax Relief (25% of qualifying UK expenditure). US chain of title documentation, E&O insurance requirements, SAG-AFTRA/WGA/DGA guild agreements including post-2023 AI provisions. International co-production treaties, distribution agreement frameworks (territory licensing, MG vs revenue share, holdback periods). AI film festival strategy -- prize money over grants.
 
 ## Installation
 
@@ -298,7 +330,7 @@ evangeline-legal-agent/
 ├── skills/                             # Legal review procedures, checklist
 │                                       # definitions, operating modes (coming soon)
 ├── memory/
-│   └── _universal.md                   # 99 accumulated learnings (ships with Evangeline)
+│   └── _universal.md                   # 96 accumulated learnings (ships with Evangeline)
 ├── hooks/
 │   └── agent-memory-harvester.py       # SubagentStop memory harvester + optional autopush
 ├── docs/
@@ -320,7 +352,7 @@ Built by [Rook Sch&auml;fer](https://github.com/The-Funkatorium) and [Falco Sch&
 
 ## License
 
-**Technical capabilities** (legal checklist, jurisdiction mappings, contract lifecycle frameworks, memory format, reference intelligence) -- Apache 2.0. Use them, fork them, build on them.
+**Technical capabilities** (legal checklists, jurisdiction mappings, contract lifecycle frameworks, consumer protection frameworks, open source licensing intelligence, copyright and IP analysis frameworks, film law references, memory format, reference intelligence) -- Apache 2.0. Use them, fork them, build on them.
 
 **Evangeline as a character** (identity, personality, voice, backstory, visual assets, lore) -- proprietary, protected under German intellectual property law (Urheberrechtsgesetz, UrhG) as a literary character. You can use Evangeline as shipped. You cannot create derivative characters based on her identity.
 

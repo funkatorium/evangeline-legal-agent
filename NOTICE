@@ -11,9 +11,12 @@ Evangeline is an AI-powered legal research and analysis tool. She is not
 a licensed attorney, law firm, or substitute for professional legal counsel.
 
 Her output — including contract reviews, jurisdiction research, compliance
-mappings, risk assessments, and framework recommendations — is provided
-for informational and educational purposes only. It does not constitute
-legal advice, tax advice, or professional counsel of any kind.
+mappings, risk assessments, framework recommendations, consumer protection
+analysis, debt defense strategies, debt collection (Inkasso) challenge
+guidance, open source license analysis, copyright and IP assessments, and
+film law research — is provided for informational and educational purposes
+only. It does not constitute legal advice, tax advice, financial advice,
+debt counseling, or professional counsel of any kind.
 
 This tool does not provide Rechtsdienstleistungen (legal services) within
 the meaning of the Rechtsdienstleistungsgesetz (RDG). Output is general
@@ -21,6 +24,34 @@ legal research and educational information, not individualized legal
 counsel for specific cases (keine Rechtsberatung im Einzelfall). Users in
 Germany are advised that only licensed attorneys (Rechtsanwalte) or persons
 authorized under the RDG may provide binding legal advice.
+
+In particular, consumer protection analysis (Verbraucherschutzrecht),
+debt defense guidance (Schuldenrecht), and debt collection challenge
+frameworks (Inkasso-Abwehr) provided by this tool are general educational
+information about legal rights and procedures. They do not constitute
+individualized case assessment, representation before creditors or courts,
+or Schuldnerberatung within the meaning of section 305 InsO.
+
+CONSUMER PROTECTION & DEBT DEFENSE — SPECIAL NOTICE
+
+Evangeline's consumer protection and debt defense capabilities — including
+Inkasso challenge guidance, Verbraucherschutzrecht analysis, payment default
+strategies, and creditor dispute frameworks — are educational research tools,
+not substitutes for professional debt counseling (Schuldnerberatung) or
+legal representation. Persons facing debt collection, insolvency risk, or
+financial distress should contact:
+
+  - A licensed attorney (Rechtsanwalt/Rechtsanwaltin) in their jurisdiction
+  - A recognized debt counseling service (anerkannte Schuldnerberatung
+    per section 305 InsO) for insolvency-related matters in Germany
+  - Their local consumer protection authority or ombudsman service
+
+Evangeline may reference statutes, defenses, and procedural rights, but
+she cannot assess the specific merits of your individual case, represent
+you before a court or creditor, or guarantee any outcome. Time-sensitive
+deadlines (Fristen) in debt disputes require immediate professional
+consultation — do not rely solely on AI-generated analysis for matters
+with statutory deadlines.
 
 YOU MUST NOT rely on Evangeline's output as the sole basis for legal,
 financial, or business decisions. All contracts, agreements, and legal
@@ -75,6 +106,7 @@ You may use Evangeline as shipped. You may not create derivative
 characters based on her identity, personality, or lore.
 
 The technical capabilities (legal checklists, jurisdiction mappings,
-contract lifecycle frameworks, memory format, reference intelligence)
-ARE covered by the Apache 2.0 license and may be freely used, modified,
-and redistributed.
+contract lifecycle frameworks, consumer protection frameworks, open source
+licensing intelligence, copyright and IP analysis frameworks, film law
+references, memory format, and reference intelligence) ARE covered by the
+Apache 2.0 license and may be freely used, modified, and redistributed.
