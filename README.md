@@ -3,7 +3,7 @@
 </p>
 
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Montserrat&weight=500&size=22&pause=1200&color=D4AF37&center=true&vCenter=true&width=900&lines=Read+the+clause.+Then+read+what+it's+hiding.;96+learnings+from+production+legal+reviews.+Five+jurisdictions.;Diagnosis+only.+Because+the+agent+that+finds+the+gap+shouldn't+draft+the+fix." alt="Evangeline tagline" />
+  <img src="https://readme-typing-svg.demolab.com?font=Montserrat&weight=500&size=22&pause=1200&color=D4AF37&center=true&vCenter=true&width=900&lines=Read+the+clause.+Then+read+what+it's+hiding.;96+learnings+from+production+legal+reviews.+Five+jurisdictions.;Ships+a+legal+deploy+guard.+ADHD-proof.+The+gate+cannot+be+skipped." alt="Evangeline tagline" />
 </p>
 
 <p align="center">
@@ -40,6 +40,14 @@ Every review she runs makes the next one sharper. Evangeline carries 96 accumula
 <p align="center">
   <img src="./assets/evangeline-modern-spec.png" alt="Evangeline -- Modern Professional Turnaround" width="600" />
 </p>
+
+## What's New in v1.2.0
+
+- **Legal Deploy Guard** -- a reusable shell hook that gates deploys on legal content changes. ADHD-proof: if AGB, Datenschutz, or Widerrufsbelehrung changed since last deploy, you must confirm customer notification before proceeding. [Setup](#legal-deploy-guard-new-in-v120)
+- **AGB + Widerrufsbelehrung drafting** -- bilingual (DE/EN) terms and withdrawal notices for German Einzelunternehmen, covering Kleinunternehmerregelung, PAngV, §312g BGB, AGB-Kontrolle, and the new §356a BGB Widerrufsbutton
+- **Learnings count corrected** -- 88 after v1.1.0 dedup (body text previously said 99)
+
+See [CHANGELOG.md](CHANGELOG.md) for full history.
 
 ## Where She Comes From
 
@@ -280,6 +288,29 @@ Then register the harvester in your `~/.claude/settings.json` under `hooks.Subag
 
 The hook is generic -- it routes by agent name from the SubagentStop event metadata, so the same script works for every agent in your squad. Restart your Claude Code session for the hook to take effect.
 
+### Legal Deploy Guard (new in v1.2.0)
+
+Ships `hooks/legal-deploy-guard.sh` -- a pre-deploy gate that detects changes to AGB, Datenschutz, Widerrufsbelehrung, or Impressum content since your last deploy tag. If legal content changed, you must confirm that customer notification was sent before the deploy can proceed. The gate cannot be skipped.
+
+**Why this exists:** German law (BGB, DSGVO) requires customer notification when you materially change your terms or privacy policy. If you have ADHD (or are just one person running a business), it is trivially easy to forget. This hook makes forgetting structurally impossible.
+
+Source it in your deploy script:
+
+```bash
+# In your deploy.sh:
+source hooks/legal-deploy-guard.sh
+legal_deploy_guard "_deploy" "deploy-prod"
+# ... rest of your deploy
+```
+
+Or run it standalone before deploying:
+
+```bash
+./hooks/legal-deploy-guard.sh _deploy deploy-prod
+```
+
+It diffs against your last `deploy-prod-*` tag, so it works with any tag-based deploy workflow.
+
 ### Optional: private learning autopush
 
 For durable cloud sync, make `~/.claude/agents/memory` its own git repo with a private remote, then enable autopush in the hook command:
@@ -332,7 +363,8 @@ evangeline-legal-agent/
 ├── memory/
 │   └── _universal.md                   # 96 accumulated learnings (ships with Evangeline)
 ├── hooks/
-│   └── agent-memory-harvester.py       # SubagentStop memory harvester + optional autopush
+│   ├── agent-memory-harvester.py       # SubagentStop memory harvester + optional autopush
+│   └── legal-deploy-guard.sh           # Legal content change gate (source in deploy.sh)
 ├── docs/
 │   └── AGENT_MEMORY_AUTOPUSH.md        # Private learning repo setup
 ├── examples/                           # Production review examples (coming soon)
@@ -340,6 +372,7 @@ evangeline-legal-agent/
 │   ├── banner.png                      # GitHub banner
 │   ├── spec-sheet.gif                  # Animated capability sheet
 │   └── evangeline-modern-spec.png      # Modern professional turnaround
+├── CHANGELOG.md                        # Version history
 ├── LICENSE                             # Apache 2.0 (tech) + character IP (proprietary)
 └── README.md
 ```
